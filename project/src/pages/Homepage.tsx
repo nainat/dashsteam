@@ -13,9 +13,9 @@ const Homepage: React.FC = () => {
   ];
 
   const testimonials = [
-    { name: "Sarah Johnson", text: "Amazing service! My car looks brand new every time.", rating: 5 },
-    { name: "Mike Chen", text: "Professional team and excellent attention to detail.", rating: 5 },
-    { name: "Lisa Davis", text: "Best car wash in town! Highly recommend.", rating: 5 },
+    { name: "Rena Gupta", text: "Amazing service! My car looks brand new every time.", rating: 5 },
+    { name: "Mani Chandra", text: "Professional team and excellent attention to detail.", rating: 5 },
+    { name: "Ravi Kumar", text: "Best car wash in town! Highly recommend.", rating: 4 },
   ];
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Homepage: React.FC = () => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  });
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
